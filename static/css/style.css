@@ -1,0 +1,351 @@
+body{
+  width: 60%;
+  margin: auto;
+  padding-top: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*Buttons: google news and search*/
+.options{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: inline-block;
+  border: 1px solid lightgrey;
+  text-align: center;
+  font-size: 15px;
+  height: 42px;
+  width: 100%;
+  cursor: pointer;
+  background-color: #F4F4F4;
+  color: black;
+}
+.current{
+  background-color: #555555;
+  color: white;
+}
+button:hover{
+  background-color: #67AC5C;
+  color: white;
+}
+.btns{
+  width: 9.5%;
+  position: fixed;
+  float: left;
+}
+.layout{
+  float: right;
+  height: inherit;
+  width: 84%;
+}
+.row1{
+  display: inline-block;
+  width: 100%;
+}
+
+/*Slide Show*/
+.mySlides {
+  height: auto;
+  display: none;
+  cursor: pointer;
+  position: relative;
+}
+.mySlides img {
+  vertical-align: middle;
+  height: 250px;
+  object-fit: cover;
+  /*background-image:url('../images/broken-1.png');*/
+}
+.slideshow-container {
+  padding-left: 4%;
+  text-align: center;
+  float: left;
+  margin: auto;
+  width: 55%;
+}
+/* Caption text */
+.slide_text{
+  color: white;
+  background-color:rgba(0,0,0,0.4);
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0px;
+  font-size: 12px;
+}
+/* Fading animation */
+.fade{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*word cloud*/
+.wordcloud{
+  margin-left: 2%;
+  width: 38%;
+  float: right;
+  background-color: #F4F4F4;
+  text-align: center;
+}
+#my_dataviz{
+  width: 100%;
+  height: 250px;
+  padding:0%;
+  margin: 0%;
+}
+
+/*headings and horizontal line*/
+h1{
+  margin: 0px;
+  padding: 0px;
+  padding-top: 25px;
+  text-align: center;
+}
+hr{
+  margin-top: 4px;
+  margin-bottom: 8px;
+  width: 98%;
+  border: 1px dotted black;
+  float: right;
+}
+
+/*News Cards */
+.cards{
+  text-align: center;
+  width: 98.5%;
+  float: right;
+  margin-bottom: 5px;
+}
+.card {
+  background-color: #F4F4F4;
+  float: left;
+  width: 23.8%;
+  border-radius: 5px;
+  margin-left: 1%;
+  min-height: 380px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.4);
+}
+.card img{
+  border-radius: 5px;
+  height: 120px;
+  object-fit: cover;
+  /*background-image:url('../images/broken-1.png');*/
+}
+.card-container {
+  padding: 3%;
+}
+.card-container h4{
+  padding: 2% 0 10px;
+  margin: 0px;
+}
+.card-container p{
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*form formatting*/
+.compulsory{
+  color: red;
+}
+.search-form {
+  width: 85%;
+  margin: auto;
+  background-color: #F4F4F4;
+  padding: 1.5%;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+input {
+  margin: 2%;
+  width: 21%;
+  margin-bottom: 25px;
+}
+.form-button{
+  margin: 25px 25px 15px;
+  border: 0;
+  padding: 7px;
+  font-size: 14px;
+  color: black;
+}
+.select-options{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* second page card styling*/
+.search-results{
+  width: 78%;
+  margin: auto;
+  text-align: center;
+}
+.horizontal-card{
+  display: inline-block;
+  text-align: left;
+  margin: 1%;
+  box-shadow: 0 1px 1px 1px rgba(0,0,0,0.4);
+  transition: 0.3s;
+  background-color: #F4F4F4;
+  border: lightgrey solid 1px;
+  border-radius: 5px;
+  width: 100%;
+}
+.horizontal-card:hover{
+  box-shadow: 0 15px 15px 1px rgba(0,0,0,0.5);
+}
+.small-card{
+  width: 100%;
+  display: inline-block;
+  height: auto;
+  cursor: pointer;
+  padding: 1%;
+}
+.small-image{
+  float: left;
+  margin: 2%;
+  object-fit: cover;
+}
+.small-image img{
+  height: 60px;
+  width: 60px;
+  /*background-image:url('../images/broken-1.png');*/
+}
+.card-content {
+  float: left;
+  width: 75%;
+  padding: 1%;
+  padding-left: 2%;
+  text-align: left;
+}
+.card-content h4{
+  margin: 0px;
+}
+.card-content p{
+  margin: 0px;
+  padding-top: 1.5%;
+  font-size: 13px;
+}
+.cross{
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 1% 1%;
+  margin: 0px;
+}
+
+/*show more show less buttons*/
+.more-less{
+  margin: 20px 25px 10px;
+  border: 0;
+  padding: 7px;
+  font-size: 14px;
+  color: black;
+  background-color: #F4F4F4;
+}
+
+/*for small screens*/
+@media only screen and (max-width: 1300px){
+  body {
+    width: 70%;
+    margin: auto;
+    padding-top: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .slideshow-container {
+    padding-left: 3%;
+    text-align: center;
+    float: left;
+    margin: auto;
+    width: 55%;
+  }
+  .wordcloud{
+    margin-left: 2%;
+    width: 39%;
+    float: right;
+    background-color: #F4F4F4;
+    text-align: center;
+  }
+  .card{
+    min-height: 400px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    width: 75%;
+    margin: auto;
+    padding-top: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .slideshow-container {
+    padding-left: 3%;
+    text-align: center;
+    float: left;
+    margin: auto;
+    width: 55%;
+  }
+  .wordcloud{
+    margin-left: 2%;
+    width: 40%;
+    float: right;
+    background-color: #F4F4F4;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1100px){
+  body {
+    width: 80%;
+    margin: auto;
+    padding-top: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .slideshow-container {
+    padding-left: 3%;
+    text-align: center;
+    float: left;
+    margin: auto;
+    width: 55%;
+  }
+  .wordcloud{
+    margin-left: 2%;
+    width: 40%;
+    float: right;
+    background-color: #F4F4F4;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1050px){
+  body {
+    width: 800px;
+    margin: auto;
+    padding-top: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .slideshow-container {
+    padding-left: 1%;
+    text-align: center;
+    float: left;
+    margin: auto;
+    width: 55%;
+  }
+  .wordcloud{
+    margin-left: 2%;
+    width: 40%;
+    float: right;
+    background-color: #F4F4F4;
+    text-align: center;
+  }
+}
